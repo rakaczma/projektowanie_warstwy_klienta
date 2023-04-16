@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    let person = {
+      firstname: 'Jan',
+      lastname: 'Kowalski',
+      introduce: function () {
+        console.log('Jestem ' + this.firstname + ' ' + this.lastname);
+      }
+    }
+
+    person.introduce();
+    person.firstname = 'Adam';
+    person.introduce();
+
+
+    function Car(brand1, model) {
+      this.brand = brand1 + '<---';
+      this.model = model;
+
+      this.showDetails = function () {
+        console.log('Car: ' + this.brand + ' ' + this.model);
+      }
+    }
+
+    let fiat = new Car('Fiat', '126p');
+    fiat.showDetails();
+
+
+    class House {
+      constructor(windows, doors) {
+        this.windows = windows;
+        this.doors = doors;
+      }
+
+      showDetails() {
+        console.log('Dom ma: ' + this.windows + ' okien ' + this.doors + ' drzwi.')
+      }
+    }
+
+    let house = new House(5, 2);
+    house.showDetails();
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
