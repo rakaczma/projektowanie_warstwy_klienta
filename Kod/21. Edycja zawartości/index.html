@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      div {
+        height: 200px;
+        width: 400px;
+        background-color: gray;
+        margin: 20px;
+      }
+    </style>
+  <script>
+    window.onload = function () {
+      // document.getElementById('element-one').textContent = 'nowa zawartość';
+      // document.getElementById('element-two').innerHTML = '<b>Pogrubiony tekst';
+
+      setTimeout(function () {
+      document.getElementById('element-one').textContent = 'nowa zawartość';
+      document.getElementById('element-two').innerHTML = '<b>Pogrubiony tekst';
+      }, 3000);
+
+    }
+  </script>
+</head>
+<body>
+
+  <div id="element-one"></div>
+  <div id="element-two"></div>
+
+
+</body>
+</html>
